@@ -1,0 +1,34 @@
+<style>
+#plotdb-wrapper, #plotdb-inner, #plotdb-iframe {
+	overflow: scroll !important;
+	-webkit-overflow-scrolling: touch !important;
+}
+#plotdb-wrapper {
+	width: 100%;
+	outline: 4px solid #ccc;
+}
+#plotdb-inner {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 75%;
+}
+#plotdb-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+}
+@media only screen and (orientation: portrait) {
+	#plotdb-inner {
+		padding-bottom: 125%;
+	}
+}
+</style>
+<p>如果玩起來卡卡的，請點<a href="https://plotdb.io/v/chart/12756" target="_blank">這裡直接到PlotDB上玩</a>哦！</p>
+<div id="plotdb-wrapper">
+	<div id="plotdb-inner" style="">
+		<iframe id="plotdb-iframe" src="https://plotdb.io/v/chart/12756" frameborder="0" allowfullscreen="true"></iframe>
+	</div>
+</div>

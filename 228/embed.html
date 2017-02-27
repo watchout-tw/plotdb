@@ -6,13 +6,48 @@ p:first-of-type {
 }
 
 .story-panel {
-	top: -250px !important;
+	top: -325px !important;
+  	left: -200px !important;
+}
+
+.first-panel {
+	top: -325px !important;
   	left: -200px !important;
 }
 
 .the-end {
 	top: -250px !important;
 	left: 0px !important;
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+	.story-panel {
+		min-width: auto;
+		width: 90%;
+		left: 5%;
+		top: -200px !important;
+		left: 0px !important;
+	}
+
+	.first-panel {
+		top: -200px !important;
+		left: 0px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.story-panel {
+		min-width: auto;
+		width: 90%;
+		left: 5%;
+		top: -200px !important;
+		left: 0px !important;
+	}
+
+	.first-panel {
+		top: -200px !important;
+		left: 0px !important;
+	}
 }
 
 </style>
